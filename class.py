@@ -101,3 +101,24 @@ v2 = Vector(5, -2)
 print (v1 + v2)
 
 '''Output: Vector (7, 8) '''
+
+
+class Base:
+    def __init__(self):
+        self.a = "satish"
+        self.__c = "Patel"
+
+
+'''5) encapsulation-in-python'''
+class Derived(Base):
+    def __init__(self):
+        # Calling constructor of
+        # Base class
+        Base.__init__(self)
+        print(self.__a)
+    # Driver code
+
+
+obj1 = Base()
+print(obj1.a)
+''' Output: satish'''
