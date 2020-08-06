@@ -196,3 +196,32 @@ if __name__ == "__main__":
             Number of instances: : 1
             Number of instances: : 0'''
 
+"""
+    iterator example
+    """
+class Reverse:
+
+
+    def __init__(self, data):
+        self.data = data
+        self.index = len(data)
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.index == 0:
+            raise StopIteration
+        self.index = self.index - 1
+        return self.data[self.index]
+
+
+lst = [34, 978, 42]
+lst_backwards = Reverse(lst)
+for el in lst_backwards:
+    print(el)
+
+'''Output:42
+        978
+        34
+'''
