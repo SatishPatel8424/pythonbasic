@@ -167,7 +167,7 @@ my_car.drive_car()
 print (my_car.condition)
 '''Output:like new'''
 
-'''class example'''
+'''8)class example'''
 
 
 class C:
@@ -197,7 +197,7 @@ if __name__ == "__main__":
             Number of instances: : 0'''
 
 """
-    iterator example
+   9) iterator example
     """
 class Reverse:
 
@@ -226,7 +226,7 @@ class abc:
         34
 '''
 
-'''Motivation for Metaclasses'''
+'''10)Motivation for Metaclasses'''
 
 
 class Philosopher1(object):
@@ -256,7 +256,7 @@ print(kant.the_answer())
 ''' 42
     42'''
 
-'''Creating Singletons using Metaclasses'''
+'''11)Creating Singletons using Metaclasses'''
 class Singleton(object):
     _instance = None
 
@@ -286,3 +286,24 @@ print(x == y)
 True
 False
 '''
+
+'''12)Standard Classes as Base Classes'''
+class Plist(list):
+
+    def __init__(self, l):
+        list.__init__(self, l)
+
+    def push(self, item):
+        self.append(item)
+
+
+if __name__ == "__main__":
+    x = Plist([3,4])
+    x.push(47)
+    print(x)
+
+'''Output: [3, 4, 47]'''
+
+
+
+
