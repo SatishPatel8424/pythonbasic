@@ -215,13 +215,16 @@ class Reverse:
         self.index = self.index - 1
         return self.data[self.index]
 
-
-lst = [34, 978, 42]
-lst_backwards = Reverse(lst)
-for el in lst_backwards:
-    print(el)
+class abc:
+    lst = [34, 978, 42]
+    lst_backwards = Reverse(lst)
+    for el in lst_backwards:
+        print(el)
 
 '''Output:42
         978
         34
 '''
+
+
+''' '''
