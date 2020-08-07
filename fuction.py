@@ -171,3 +171,8 @@ def f(func):
 
 f(g)
 
+'''
+Output: Hi, it's me 'f'
+        I will call 'func' now
+        Hi, it's me 'g'
+        Thanks for calling me'''
