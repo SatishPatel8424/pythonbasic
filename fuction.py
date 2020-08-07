@@ -176,3 +176,23 @@ Output: Hi, it's me 'f'
         I will call 'func' now
         Hi, it's me 'g'
         Thanks for calling me'''
+
+
+
+import math
+
+def foo(func):
+    print("The function " + func.__name__ + " was passed to foo")
+    res = 0
+    for x in [1, 2, 2.5]:
+        res += func(x)
+    return res
+
+print(foo(math.sin))
+print(foo(math.cos))
+
+'''
+Output:  The function sin was passed to foo
+         2.3492405557375347
+        The function cos was passed to foo
+        -0.6769881462259364'''
