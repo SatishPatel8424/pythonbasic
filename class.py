@@ -376,13 +376,46 @@ print(human.get_temperature())
 print(human.to_fahrenheit())
 
 # new constraint implementation
-human.set_temperature(-300)
+human.set_temperature(300)
 
 # Get the to_fahreheit method
 print(human.to_fahrenheit())
 '''Output:37
 98.60000000000001
-Traceback (most recent call last):
-  File "<string>", line 30, in <module>
-  File "<string>", line 16, in set_temperature
-ValueError: Temperature below -273.15 is not possible.'''
+572.0'''
+
+
+
+# Using property() function to achieve getters and setters behaviour
+
+class Geeks:
+    def __init__(self):
+        self._age = 0
+
+    # function to get value of _age
+    def get_age(self):
+        print("getter method called")
+        return self._age
+
+    # function to set value of _age
+    def set_age(self, a):
+        print("setter method called")
+        self._age = a
+
+    # function to delete _age attribute
+    def del_age(self):
+        del self._age
+
+    age = property(get_age, set_age, del_age)
+
+
+mark = Geeks()
+
+mark.age = 10
+
+print(mark.age)
+
+'''Output: 
+setter method called
+getter method called
+10'''

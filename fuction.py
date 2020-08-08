@@ -196,3 +196,4 @@ Output:  The function sin was passed to foo
          2.3492405557375347
         The function cos was passed to foo
         -0.6769881462259364'''
+
