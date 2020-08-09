@@ -10,9 +10,7 @@ fuction_problem_solution.n = int(input("enter the number:"))
 
 
 # print the variable
-print("maximum number is : " + str(fuction_problem_solution.maximum(fuction_problem_solution.a,
-																	fuction_problem_solution.b,
-																	fuction_problem_solution.c)))
+print("maximum number is : " + str(fuction_problem_solution.maximum(fuction_problem_solution.a,fuction_problem_solution.b,fuction_problem_solution.c)))
 print("sum of list : " + str(fuction_problem_solution.sum_num((6, 8, 6, 7, 8))))
 print("print the reverse string : " + fuction_problem_solution.String)
 print("factorial is : "+str(fuction_problem_solution.fact(fuction_problem_solution.n)))
