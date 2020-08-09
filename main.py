@@ -1,5 +1,4 @@
 import sys
-
 sys.path.append('/home/satish/PycharmProjects/pythonbasic/')
 
 import fuction_problem_solution
