@@ -78,3 +78,16 @@ def underline(function):
 def test():
     return "satish patel"
 print(test())
+
+# problem 7) Python program to access a function inside a function.
+def fuction_s(msg):
+    def inside_f():
+
+        print(msg)
+
+    return inside_f
+
+
+
+another = fuction_s("satish")
+another()
