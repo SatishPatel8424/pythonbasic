@@ -91,3 +91,13 @@ def fuction_s(msg):
 
 another = fuction_s("satish")
 another()
+
+# problem : 8) Write a Python program to detect the number of local variables declared in a function.
+
+def demo():
+    x = 1
+    y = 2
+    str1= "satish"
+    print("satish patel")
+
+print(demo.__code__.co_nlocals)
