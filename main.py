@@ -6,7 +6,6 @@ import fuction_problem_solution
 
 # call the function
 fuction_problem_solution.printDict()
-
 fuction_problem_solution.another()
 fuction_problem_solution.n = int(input("enter the number:"))
 
