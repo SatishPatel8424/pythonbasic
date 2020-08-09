@@ -40,5 +40,41 @@ def fact(n):
         return 1
     else:
         return n * fact(n-1)
-n=int(input())
+n=int(input("enter the number:"))
 print(fact(n))
+
+# problem : 5)Define a function which can print a dictionary where the keys are numbers between 1 and 5 (both included) and the values are square of keys.
+
+def printDict():
+    d = dict()
+    for i in range(1, 4):
+        d[i] = i ** 2
+    print(d)
+
+
+printDict()
+'''
+output: {1: 1, 2: 4, 3: 9}
+'''
+
+# Problem 6) make a chain of function decorators (bold, italic, underline etc.).
+def bold(function):
+    def apply():
+        return "<b>" + function() + "</b>"
+    return apply
+
+def italic(function):
+    def apply():
+        return "<i>" + function() + "</i>"
+    return apply
+
+def underline(function):
+    def apply():
+        return "<u>" + function() + "</u>"
+    return apply
+@bold
+@italic
+@underline
+def test():
+    return "satish patel"
+print(test())
