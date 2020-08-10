@@ -7,9 +7,11 @@ import fuction_problem_solution
 import class_problem_solution
 
 # call the function
+
 fuction_problem_solution.n = int(input("enter the number:"))
 fuction_problem_solution.printDict()
 fuction_problem_solution.another()
+
 
 # call the class using instance
 Asqr = class_problem_solution.Square(5)
@@ -27,9 +29,12 @@ logging.debug("sum of list : " + str(fuction_problem_solution.sum_num((6, 8, 6, 
 logging.debug("print the reverse string : " + fuction_problem_solution.String)
 logging.debug(fuction_problem_solution.demo.__code__.co_nlocals)
 logging.debug("factorial is : "+str(fuction_problem_solution.fact(fuction_problem_solution.n)))
+logging.debug("The Value of Index:"+str (fuction_problem_solution.binary_search(fuction_problem_solution.Array_List, 82)))
 
 if __name__ == "__main__":
 	class_problem_solution.BankAccount.main(self=True)
+	class_problem_solution.Student.Call(self=True)
+
 
 
 
