@@ -13,9 +13,7 @@ fuction_problem_solution.another()
 
 
 # print the variable
-logging.debug("maximum number is : " + str(fuction_problem_solution.maximum(fuction_problem_solution.a,
-																	fuction_problem_solution.b,
-																	fuction_problem_solution.c)))
+logging.debug("maximum number is : " + str(fuction_problem_solution.maximum(fuction_problem_solution.a,fuction_problem_solution.b,fuction_problem_solution.c)))
 logging.debug("sum of list : " + str(fuction_problem_solution.sum_num((6, 8, 6, 7, 8))))
 logging.debug("print the reverse string : " + fuction_problem_solution.String)
 logging.debug("factorial is : "+str(fuction_problem_solution.fact(fuction_problem_solution.n)))
