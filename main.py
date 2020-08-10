@@ -11,6 +11,14 @@ fuction_problem_solution.n = int(input("enter the number:"))
 fuction_problem_solution.printDict()
 fuction_problem_solution.another()
 
+# call the class using instance
+Asqr = class_problem_solution.Square(5)
+logging.debug("area is : "+str(Asqr.area()))
+logging.debug("area of square : "+str(class_problem_solution.Square().area()))
+
+
+
+
 
 
 # print the variable
@@ -22,4 +30,7 @@ logging.debug("factorial is : "+str(fuction_problem_solution.fact(fuction_proble
 
 if __name__ == "__main__":
 	class_problem_solution.BankAccount.main(self=True)
+
+
+
 
