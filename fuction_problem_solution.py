@@ -1,4 +1,7 @@
+import logging
 #  function practice problems and solutions
+logging.basicConfig(level=logging.DEBUG)
+
 
 # problem: 1) Write a Python function using find max number
 def maximum(a, b, c):
@@ -37,13 +40,14 @@ def printDict():
     d = dict()
     for i in range(1, 4):
         d[i] = i ** 2
-    print(d)
+        logging.debug(d)
+
 
 '''
 output: {1: 1, 2: 4, 3: 9}
 '''
 
-# problem 7) Python program to access a function inside a function.
+# problem 6) Python program to access a function inside a function.
 def fuction_s(msg):
     def inside_f():
         print(msg)
@@ -52,9 +56,10 @@ def fuction_s(msg):
 def another():
     another = fuction_s("satish")
 
-# problem : 8) Write a Python program to detect the number of local variables declared in a function.
+
+# problem : 7) Write a Python program to detect the number of local variables declared in a function.
 def demo():
     x = 1
     y = 2
     str1= "satish"
-    print("satish patel")
+    logging.debug("satish patel")
