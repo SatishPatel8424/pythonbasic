@@ -24,3 +24,4 @@ logging.debug("factorial is : "+str(fuction_problem_solution.fact(fuction_proble
 
 if __name__ == "__main__":
 	class_problem_solution.BankAccount.main(self=True)
+
