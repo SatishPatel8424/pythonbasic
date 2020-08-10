@@ -56,7 +56,6 @@ def fuction_s(msg):
 def another():
     another = fuction_s("satish")
 
-
 # problem : 7) Write a Python program to detect the number of local variables declared in a function.
 def demo():
     x = 1
