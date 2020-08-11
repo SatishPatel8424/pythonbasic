@@ -44,7 +44,7 @@ class Square(Shape):
     def area(self):
         return self.length * self.length
 
-#problem 3:Calculate grade of five subjects.
+#problem 3:Calculate grade of five subjects and get the rollno,name.
 class Student:
     def __init__(self):
         self.__roll = 0
